@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary: #5a5e6b;
+  --color-tertiary-container: #00806b;
+  --color-tertiary: #006554;
+  --color-surface-canvas: #FFFFFF;
+  --color-outline-variant: #c3c5d8;
+  --color-on-primary: #ffffff;
+  --color-market-down-subtle: rgba(242, 54, 69, 0.08);
+  --color-outline: #737687;
+  --color-secondary-fixed: #dfe2f2;
+  --color-error: #ba1a1a;
+  --color-inverse-on-surface: #eef0fd;
+  --color-on-primary-fixed-variant: #003ab3;
+  --color-error-container: #ffdad6;
+  --color-surface-dim: #d7d9e6;
+  --color-market-up: #089981;
+  --color-on-secondary-container: #606471;
+  --color-inverse-primary: #b6c4ff;
+  --color-market-index-blue: #0088CC;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-container: #f7f5ff;
+  --color-on-secondary-fixed: #171b26;
+  --color-border-subtle: #F0F3FA;
+  --color-on-background: #181b24;
+  --color-market-up-subtle: rgba(8, 153, 129, 0.08);
+  --color-on-tertiary-fixed-variant: #005143;
+  --color-text-primary: #131722;
+  --color-surface-tint: #004ee8;
+  --color-tertiary-fixed: #84f7db;
+  --color-on-tertiary-fixed: #00201a;
+  --color-secondary-fixed-dim: #c3c6d5;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-market-down: #F23645;
+  --color-surface-container-highest: #e0e2ee;
+  --color-inverse-surface: #2d303a;
+  --color-surface-container: #ebedfa;
+  --color-surface-hover: #F8F9FD;
+  --color-primary: #0049db;
+  --color-on-primary-fixed: #001550;
+  --color-surface-bright: #faf9ff;
+  --color-primary-container: #2962ff;
+  --color-cta-gradient-end: #9C27B0;
+  --color-surface: #faf9ff;
+  --color-surface-container-low: #f1f3ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-container: #dfe2f2;
+  --color-surface-subtle: #F0F3FA;
+  --color-primary-fixed: #dce1ff;
+  --color-text-secondary: #787B86;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-fixed-dim: #66dabf;
+  --color-on-surface: #181b24;
+  --color-surface-container-high: #e5e8f4;
+  --color-background: #faf9ff;
+  --color-primary-fixed-dim: #b6c4ff;
+  --color-surface-variant: #e0e2ee;
+  --color-on-surface-variant: #434656;
+  --color-on-tertiary-container: #d9fff2;
+  --color-border-base: #E0E3EB;
+  --color-on-secondary-fixed-variant: #434653;
+
+  --spacing-space-2xs: 0.125rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-base: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-gutter: 1rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-tablet: 2rem;
+  --spacing-margin-desktop: 3rem;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overscroll-behavior: none;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Typography Classes matching Fintech Markets Studio design system */
+.font-display-hero, .text-display-hero {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+.font-display-hero-mobile, .text-display-hero-mobile {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.font-headline-lg, .text-headline-lg {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-md, .text-headline-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+.font-headline-sm, .text-headline-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-title-md, .text-title-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.font-body-lg, .text-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-md, .text-body-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-body-sm, .text-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.font-ticker, .text-ticker {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.font-numeric-table, .text-numeric-table {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-label-md, .text-label-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.font-label-sm, .text-label-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.font-badge, .text-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
